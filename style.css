@@ -1,0 +1,442 @@
+body{
+    width: 100vw;
+    min-width: 500px;
+    margin: auto;
+    background-color: #B5DAE1;
+    color: #43413e;
+    border: #43413e;
+}
+.wrapperContents{
+    margin: auto;
+    width: 90%;
+}
+/*スライドインメニュー START */
+#menu-navi{
+    position:fixed;
+    z-index: 999;
+    background-color: #aaa096;
+    height: 100vh;
+    width: 100%;
+    top:0px;
+    right: -100vw;
+    transition: all 0.6s;
+}
+#menu-navi.panelclose{
+    right: 0vw;
+}
+#menu-navi li{
+    padding:12px;
+    color:black;
+    border-bottom: 1px solid black;
+    list-style-type: none;
+}
+#menu-navi a{
+    text-decoration: none;
+    color: black;
+}   
+.openbtn{
+    position: relative;
+    border-radius: 5px;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.openbtn span{
+    display: inline-block;
+    position: absolute;
+    width: 65%;
+    background-color: black;
+    left: 14px;
+    height: 2px;
+    transition: all .4s;
+}
+.openbtn span:nth-of-type(1){
+    top:13px;
+}
+.openbtn span:nth-of-type(2){
+    top:26px;
+}
+.openbtn span:nth-of-type(3){
+    top:38px;
+}
+.openbtn span:nth-of-type(3)::after{
+    content:"Menu";
+    position: absolute;
+    left: 2px;
+    height: 2px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+/* closeクラスが付与されると線が回転して×になり、Menu→Closeへ変更 */
+.openbtn.close span:nth-of-type(1){
+    top:14px;
+    left:18px;
+    width: 40%;
+    transform: translateY(6px) rotate(-45deg);
+}
+.openbtn.close span:nth-of-type(2){
+    opacity: 0;
+}
+.openbtn.close span:nth-of-type(3){
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 40%;
+}
+.openbtn.close span:nth-of-type(3)::after{
+    content:"Close";
+    transform:translateY(0) rotate(-45deg);
+    top:5px;
+    left:-4px;
+}
+/* スライドインメニュー END*/
+
+/* ヘダー  START*/
+.header{
+    display: flex;
+    padding:20px 40px;
+    justify-content: space-between;
+    background-color: #B5DAE1;  
+}
+h1{
+    margin: 0;
+}
+.menuContents{
+    padding-top: 20px;
+}
+.menuContents a{
+    display: block;
+}
+.snsLink{
+    position: absolute;
+    left:370px;
+    width: 180px;
+    margin-top: 10px;
+}
+.iconSize{
+    font-size: 2em;
+    color: #ac6c0d;
+}
+.snsLink a{
+    padding-right: 10px;
+}
+/* ヘダー  END */
+
+/* topBanner  START */
+.topBanner{
+    background-image: url("image/ゴールデンレトリバー木漏れ日.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.conceptSec{
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 55px;
+}
+.conceptText{
+    padding-bottom: 25px;
+}
+.conceptImg1{
+    background-image: url("image/トイプードル散歩.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    width: 400px;
+    height: 200px;
+}
+.conceptImg2{
+    background-image: url("image/シェルティ散歩.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+    height: 200px;
+}
+.conceptblock{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.conceptblock p{
+    width: 350px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+/* topBanner  END */
+/* dogsSec  START */
+.dogsSec{
+    text-align: center;
+    height: 500px;
+}
+.dogSlides{
+    display: flex;
+    overflow: hidden;
+    width: 756px;
+    padding:0px;
+}
+.dogSlides li{
+    transform: translateX(0);
+    transition: 1s;
+    list-style-type: none;
+    border: solid 1px gray;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    box-shadow: 15px 15px 0px 0 #aaa096;
+}
+.dogPicCommon{
+    width: 230px;
+    height: 200px; 
+    background-size: cover;
+    border-radius: 20px;
+}
+.dogPic1{
+    background-image: url(image/セントバーナード.jpg);
+    background-position: center;
+}
+.dogPic2{
+    background-image: url(image/ゴールデンレトリバー.jpg);
+    background-position: center right;
+}
+.dogPic3{
+    background-image: url(image/秋田犬.jpg);
+    background-position: center center;
+}
+.dogPic4{
+    background-image: url(image/ラブラドール.jpg);
+    background-position: center right;
+}
+.dogPic5{
+    background-image: url(image/ダルメシアン.jpg);
+    background-position: center center;
+}
+.buttonArea{
+    padding-top:40px;
+}
+.slideMenu{
+    margin: auto;
+    width: 800px;
+}
+.index-btns{
+    display: none;
+}
+/* dogsSec  END */
+/* priceSec  START */
+.priceSec{
+    margin-top:50px;
+}
+h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+.priceTable{
+    padding: 0px;
+    width: 1000px;
+    margin:auto;
+}
+.priceSec dl{
+    border: 1px gray solid;
+    border-radius: 20px;
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 15px 15px 0px 0 #aaa096;
+    padding:15px 0px 0px 50px;
+    font-size: 20px;
+}
+.priceSec dt p{
+    font-size: 14px;
+    margin: 0px;
+}
+.priceSec dd{
+    margin: 0px;
+    padding:20px 50px 0px 0px;
+    font-size: 20px;
+}
+/* priceSec  END */
+/* accessSec  START */
+.accessInfoBox{
+    border: solid 1px gray;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0px 0 #aaa096;
+}
+.accessInfo{
+    margin: 40px;
+}
+.accessInfo img{
+    width: 300px;
+}
+iframe{
+    width: 300px;
+    height: 250px;
+}
+.atmosphere{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.address{
+    width: 700px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.address div{
+    width: 270px;
+}
+/* accessSec  END */
+/* footer  START */
+footer{
+    height: 130px;
+    margin-top: 40px;
+    background-color: #B5DAE1;
+    padding-top: 30px;
+}
+.footerLogo{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.snsLink_footer{
+    text-align: center;
+}
+small{
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+}
+/* footer  END */
+
+/* モーダルウィンドウ　START */
+.modal{
+    width: 65%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+.modal-content-wrap{
+    margin: 30px;
+    text-align: center;
+}
+.modal-close-wrap{
+    position: absolute;
+    right: 40px;
+    top:20px;
+}
+.modal-close span{
+    position: relative;
+    width: 100%;
+    height: 0.5px;
+    background-color: gray;
+    display: block;
+}
+.modal-close{
+    width: 30px;
+    height: 30px;
+}
+.modal-close span:nth-child(1){
+    transform: rotate(45deg);
+}
+.modal-close span:nth-child(2){
+    transform: rotate(-45deg);
+}
+.modal.open{
+    display: block;
+}
+.modalPicCommon{
+    width: 340px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin: auto;
+}
+/* モーダルウィンドウ　END */
+
+/* オーバーレイ　START */
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: .6;
+    z-index: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.overlay.open{
+    display: block;
+}
+/* オーバーレイ　END */
+
+/* フェードイン　START */
+.animation{
+    opacity:0;
+    visibility: hidden;
+    transition:2s;
+    transform: translateY(30px);
+}
+.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* フェードイン　END */
+
+/* レスポンシブ対応　START */
+@media screen and (max-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+ body{    
+    width: 800px;
+    }
+    /*スライドインメニュー START */
+ #menu-navi{
+    right: -1000px;
+    height: 100%;
+  }
+ .topBanner{
+    background-position: center right;
+ }
+ .conceptblock{
+    display: block;
+    width: 600px;
+}
+ .conceptblock p{
+    width: 100%;
+    text-align: center;
+ }
+ .conceptImg1, .conceptImg2{
+    width: 100%;
+    height: 300px;
+ }
+  .priceTable{
+    width: 750px;
+  }
+  .accessInfoBox{
+    width: 750px;
+  }
+}
