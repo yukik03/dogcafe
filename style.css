@@ -439,4 +439,50 @@ small{
   .accessInfoBox{
     width: 750px;
   }
+  h2{
+    font-size: 38px;
+  }
+  .conceptSec p{
+    font-size: 20px;
+  }
+  .conceptImg2{
+    margin-top: 45px;
+  }
+  .dogPicCommon{
+    width: 370px;
+    height: 390px;
+  }
+  .change-btn{
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+  }
+  .dogName{
+    font-size: 26px;
+  }
+  .priceSec {
+    margin-top: 400px;
+  }
+  .priceSec dt p{
+    font-size: 24px;
+  }
+  .priceSec dd{
+    font-size: 24px;
+  }
+  .modal{
+    width: 80%;
+    height: 70%;
+  }
+  .modalPicCommon{
+    width: 420px;
+    height: 400px;
+  }
+  .modal-content-wrap{
+    font-size: 28px;
+  }
+  .dog-modal{
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+  }
 }
