@@ -1,6 +1,6 @@
 body{
     width: 100vw;
-    min-width: 500px;
+    /* min-width: 500px; */
     margin: auto;
     background-color: #B5DAE1;
     color: #43413e;
@@ -418,16 +418,22 @@ small{
     right: -1000px;
     height: 100%;
   }
+.snsLink{
+    left: 0%;
+    top: 13%;
+}
  .topBanner{
     background-position: center right;
+    height: 155vw;
  }
  .conceptblock{
     display: block;
-    width: 600px;
+    width: 100%;
 }
  .conceptblock p{
     width: 100%;
     text-align: center;
+    padding-left: 0px;
  }
  .conceptImg1, .conceptImg2{
     width: 100%;
