@@ -413,19 +413,26 @@ small{
  body{    
     width: 100%;
     }
+.header {
+    padding-bottom: 55px;
+    }
     /*スライドインメニュー START */
  #menu-navi{
     right: -1000px;
     height: 100%;
   }
 .snsLink{
-    left: 0%;
-    top: 13%;
+    left: 25%;
+    top: 14%;
 }
  .topBanner{
     background-position: center right;
     height: 155vw;
  }
+ .buttonArea{    
+    position: absolute;
+    left: 25%;
+}
  .conceptblock{
     display: block;
     width: 100%;
@@ -439,23 +446,27 @@ small{
     width: 100%;
     height: 300px;
  }
+ .dogSlides{
+    width: 53%;
+}
+
   .priceTable{
-    width: 750px;
+    width: 95%;
   }
   .accessInfoBox{
-    width: 750px;
+    width: 95%;
   }
   h2{
     font-size: 38px;
   }
   .conceptSec p{
-    font-size: 20px;
+    font-size: 15px;
   }
   .conceptImg2{
     margin-top: 45px;
   }
   .dogPicCommon{
-    width: 370px;
+    width: 90vw;
     height: 390px;
   }
   .change-btn{
@@ -475,9 +486,13 @@ small{
   .priceSec dd{
     font-size: 24px;
   }
+  .address{
+    display: block;
+  }
   .modal{
-    width: 80%;
-    height: 70%;
+    width: 45%;
+    height:auto;
+    left:24%;
   }
   .modalPicCommon{
     width: 420px;
