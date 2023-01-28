@@ -490,13 +490,12 @@ small{
     display: block;
   }
   .modal{
-    width: 45%;
+    width: 35%;
     height:auto;
     left:24%;
   }
   .modalPicCommon{
-    width: 420px;
-    height: 400px;
+    width: 100%;
   }
   .modal-content-wrap{
     font-size: 28px;
