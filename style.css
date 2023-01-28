@@ -256,10 +256,13 @@ h2{
     padding:15px 0px 0px 50px;
     font-size: 20px;
 }
-.priceSec dt p{
+/* .priceMenu, dd{
+    font-weight: bold;
+} */
+/* .priceSec dt p{
     font-size: 14px;
     margin: 0px;
-}
+} */
 .priceSec dd{
     margin: 0px;
     padding:20px 50px 0px 0px;
@@ -449,10 +452,15 @@ small{
  .dogSlides{
     width: 53%;
 }
-
+ .priceSec dl{
+    padding:0px 10px;
+}
   .priceTable{
-    width: 95%;
+    width: 100%;
   }
+  .priceMenu, dd{
+    font-size: 24px;
+    }
   .accessInfoBox{
     width: 95%;
   }
@@ -480,11 +488,9 @@ small{
   .priceSec {
     margin-top: 400px;
   }
-  .priceSec dt p{
-    font-size: 24px;
-  }
   .priceSec dd{
     font-size: 24px;
+    padding-right: 0px;
   }
   .address{
     display: block;
@@ -498,7 +504,7 @@ small{
     width: 100%;
   }
   .modal-content-wrap{
-    font-size: 28px;
+    font-size: 18px;
   }
   .dog-modal{
     height: 50px;
