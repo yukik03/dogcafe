@@ -509,7 +509,7 @@ small{
   }
   .modal{
     width: 91%;
-    height:67%;
+    height:60%;
     top:34%;
   }
   .modalPicCommon{
@@ -517,7 +517,7 @@ small{
     height: 235px;
   }
   .modal-content-wrap{
-    font-size: 18px;
+    font-size: 14px;
   }
   .dog-modal{
     height: 50px;
