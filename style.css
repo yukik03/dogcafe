@@ -446,6 +446,7 @@ small{
  }
  .dogSlides{
     width: 100%;
+    overflow: hidden;
 }
  .priceSec dl{
     padding:0px 10px;
