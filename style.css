@@ -510,8 +510,9 @@ small{
   }
   .modal{
     width: 91%;
-    height:60%;
+    height:80%;
     top:34%;
+    overflow: hidden;
   }
   .modalPicCommon{
     width: 90%;
