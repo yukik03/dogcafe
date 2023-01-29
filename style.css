@@ -256,13 +256,6 @@ h2{
     padding:15px 0px 0px 50px;
     font-size: 20px;
 }
-/* .priceMenu, dd{
-    font-weight: bold;
-} */
-/* .priceSec dt p{
-    font-size: 14px;
-    margin: 0px;
-} */
 .priceSec dd{
     margin: 0px;
     padding:20px 50px 0px 0px;
@@ -329,6 +322,7 @@ small{
 
 /* モーダルウィンドウ　START */
 .modal{
+    overflow: hidden;
     width: 65%;
     border: 1px solid gray;
     border-radius: 20px;
@@ -427,6 +421,7 @@ small{
 .snsLink{
     left: 25%;
     top: 14%;
+    width: 40%;
 }
  .topBanner{
     background-position: center right;
@@ -450,7 +445,7 @@ small{
     height: 300px;
  }
  .dogSlides{
-    width: 53%;
+    width: 100%;
 }
  .priceSec dl{
     padding:0px 10px;
@@ -464,6 +459,12 @@ small{
   .accessInfoBox{
     width: 95%;
   }
+  .accessInfo img{
+    width: 0%;
+  }
+  iframe{
+    width: 100%;
+  }
   h2{
     font-size: 38px;
   }
@@ -474,9 +475,12 @@ small{
     margin-top: 45px;
   }
   .dogPicCommon{
-    width: 90vw;
-    height: 390px;
+    width: 85vw;
+    height: 300px;
   }
+  .slideMenu{
+    width: 100%;
+}
   .change-btn{
     height: 70px;
     width: 70px;
@@ -484,6 +488,7 @@ small{
   }
   .dogName{
     font-size: 26px;
+    margin: 10px;
   }
   .priceSec {
     margin-top: 400px;
@@ -494,14 +499,22 @@ small{
   }
   .address{
     display: block;
+    width: 100%;
+  }
+  .address div{
+    width: 100%;
+  }
+  .atmosphere{
+    width: 0%;
   }
   .modal{
-    width: 35%;
-    height:auto;
-    left:24%;
+    width: 91%;
+    height:67%;
+    top:34%;
   }
   .modalPicCommon{
-    width: 100%;
+    width: 90%;
+    height: 235px;
   }
   .modal-content-wrap{
     font-size: 18px;
