@@ -7,12 +7,9 @@ $('.openbtn').click(function(){
 
 // dogsの写真をスライド
 var ActiveSlideNum = 0;
-// var count = $(".dogSlides").children("li").length;
-// var imgWidth = $(".dogSlides").children("li").width();
 var count = $(".dogSlides li").length;
-var imgWidth = $(".dogSlides li").width();
+var imgWidth = $(".dogSlides li").width()+20;
 
-console.log(count);
 console.log(imgWidth);
 
 // ボタンの生成
@@ -25,7 +22,6 @@ $(".index-btn").eq(0).addClass("js-btn-active");
 // 現在のスライドが何枚目かによって前後のボタンを消去する関数
 function toggleChangeBtn() {
     var slideIndex = $('.index-btn').index($('.js-btn-active'));
-
         $(".change-btn").show();
     if (slideIndex == 0){
         $(".prev-btn").hide();
@@ -33,6 +29,11 @@ function toggleChangeBtn() {
         $(".next-btn").hide();
     }
 }
+// ページ読み込み時に前のボタンを消去
+$(
+    $(".prev-btn").hide()
+);
+
 
 // change-btnクラスを持つボタンをクリックしたときの処理
 $(".change-btn").click(function(){
