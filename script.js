@@ -98,7 +98,8 @@ const overlay = $('#js-overlay');
 open1.on('click',function(){
     modal1.addClass('open');
     overlay.addClass('open');
-    $('body').css('overflow-y','hidden');
+    $('body').addClass('no_scroll');
+    // $('body').css('overflow-y','hidden');
 });
 // セントバーナード END
 // ゴールデンレトリバー START

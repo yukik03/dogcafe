@@ -10,6 +10,9 @@ body{
     margin: auto;
     width: 90%;
 }
+.no_scroll{
+    overflow: hidden;
+}
 /*スライドインメニュー START */
 #menu-navi{
     position:fixed;
